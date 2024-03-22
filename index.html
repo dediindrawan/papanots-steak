@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papanots Steak</title>
+    <!-- connecting to css -->
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <!-- connecting to cdn icon fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- container start -->
+    <div class="container">
+        <!-- cta button whatsapp -->
+        <div class="cta-button-whatsapp">
+            <a href="https://wa.me/6285711542706?text=Hallo,%20Papanots%20Steak.%20Saya%20pelanggan%20dari%20website..">
+                <img src="/src/asset/whatsapp-logo.png" alt="image">
+                <small>tanya admin</small>
+            </a>
+        </div>
+
+        <!-- navbar start -->
+        <nav class="navbar">
+            <ul>
+                <li class="nav-active">
+                    <a href="index.html">
+                        <small><i class="fa-solid fa-house"></i>beranda</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/menu.html">
+                        <small><i class="fa-solid fa-bowl-rice"></i>menu</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/promo.html">
+                        <small><i class="fa-solid fa-tags"></i>promo</small>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- header start -->
+        <header>
+            <figure class="header-brand">
+                <a href="index.html">
+                    <img src="/src/asset/papanots-steak-logo.png" alt="image">
+                    <h1>papanots steak</h1>
+                </a>
+                <figcaption>
+                    <ul>
+                        <li><a href="https://www.instagram.com/papanots.id/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@papanots.id/" target="_blank"><i
+                                    class="fa-brands fa-tiktok"></i></a></li>
+                        <li><a href="https://maps.app.goo.gl/E8NGeoYu9XHtH1CP6" target="_blank"><i
+                                    class="fa-solid fa-map-location-dot"></i></a></li>
+                    </ul>
+                </figcaption>
+            </figure>
+
+            <div class="slide-wrapper">
+                <!-- image slider -->
+                <div class="image-slider">
+                    <a href="/pages/promo.html#1" class="slide">
+                        <figure>
+                            <img src="/src/asset/promo-1.jpg" alt="image">
+                        </figure>
+                    </a>
+                    <a href="/pages/promo.html#2" class="slide">
+                        <figure>
+                            <img src="/src/asset/promo-2.jpg" alt="image">
+                        </figure>
+                    </a>
+                    <a href="/pages/promo.html#3" class="slide">
+                        <figure>
+                            <img src="/src/asset/promo-3.jpg" alt="image">
+                        </figure>
+                    </a>
+                </div>
+
+                <!-- button control -->
+                <button class="button-next"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="button-prev"><i class="fa-solid fa-chevron-right"></i></button>
+
+                <!-- dot group -->
+                <div class="dot-group">
+                    <span class="dot dot-active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+        <!-- aside start -->
+        <aside class="search-form-wrapper">
+            <a href="/pages/menu.html" onclick="ctaButtonSearch()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>Lagi mau makan apa?</p>
+            </a>
+        </aside>
+        <!-- aside end -->
+
+        <!-- main start -->
+        <main class="main-index-content">
+            <section>
+                <h1 class="heading-text">menu favorit</h1>
+
+                <div class="card-wrapper">
+                    <!-- ... card content here ... -->
+                </div>
+
+                <div class="cta-button-menu">
+                    <a href="/pages/menu.html">lihat semua menu</a>
+                </div>
+            </section>
+
+            <section>
+                <h1 class="heading-text">promo menarik</h1>
+
+                <div class="promo-card-wrapper">
+                    <!-- ... card content here ... -->
+                </div>
+
+                <div class="cta-button-promo">
+                    <a href="/pages/promo.html">lihat semua promo</a>
+                </div>
+            </section>
+        </main>
+        <!-- main end -->
+
+        <!-- footer start -->
+        <footer class="footer">
+            <div class="footer-content-wrapper">
+                <section class="credits">
+                    <figure>
+                        <img src="/src/asset/papanots-steak-logo.png" alt="image" class="credits-image">
+                        <figcaption class="credits-description">
+                            <h1>papanots steak</h1>
+                            <h4>#steakistimewauntuksemua</h4>
+                            <p>jl. moch. kahfi II no.44 jagakarsa<br>jakarta-selatan 12640</p>
+
+                            <ul>
+                                <li><a href="https://www.instagram.com/papanots.id/" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="https://www.tiktok.com/@papanots.id/" target="_blank"><i
+                                            class="fa-brands fa-tiktok"></i></a></li>
+                                <li><a href="https://maps.app.goo.gl/E8NGeoYu9XHtH1CP6" target="_blank"><i
+                                            class="fa-solid fa-map-location-dot"></i></a></li>
+                            </ul>
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <div class="extra-link-wrapper">
+                    <section>
+                        <h1>informasi</h1>
+                        <ul>
+                            <li><a href="/pages/profil.html">profil papanots steak</a></li>
+                            <!-- <li><a href="#">sertifikasi & jaminan kualitas</a></li> -->
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h1>jam operasional</h1>
+                        <small>senin - minggu (16.00 - 22.00 WIB)</small>
+                    </section>
+
+                    <section>
+                        <h1>temukan kami</h1>
+                        <img src="/src/asset/gofood-logo.jpg" alt="image">
+                    </section>
+                </div>
+            </div>
+
+            <div class="copyright">
+                &copy; <span></span> <a href="index.html">papanots steak</a>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <!-- container end -->
+
+    <!-- connecting to javascript file -->
+    <script src="/dist/js/app.js"></script>
+    <script src="/dist/js/carrousel.js"></script>
+    <script src="/dist/js/script.js"></script>
+</body>
+
+</html>

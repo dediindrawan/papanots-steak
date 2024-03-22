@@ -1,0 +1,270 @@
+{
+    "menu": [
+        {
+            "id": 1,
+            "image": "/src/asset/beef-steak.jpg",
+            "cattegory": "steak",
+            "name": "beef steak",
+            "description": "Daging sapi yang dimarinasi dengan bumbu khas serta diolesi saos yang lezat",
+            "price": 38
+        },
+        {
+            "id": 2,
+            "image": "/src/asset/grill-chicken-steak.jpg",
+            "cattegory": "steak",
+            "name": "grill chicken steak",
+            "description": "Daging ayam yang dipanggang dengan bumbu-bumbu serta saos yang lezat",
+            "price": 30
+        },
+        {
+            "id": 3,
+            "image": "https://cdn.yummy.co.id/content-images/images/20230202/ZI4XE1dIfNAyyHuTSm7zTWzHJs5Bt8jY-31363735333236333037d41d8cd98f00b204e9800998ecf8427e.jpg?x-oss-process=image/resize,w_388,h_388,m_fixed,x-oss-process=image/format,webp",
+            "cattegory": "steak",
+            "name": "cripsy chicken steak",
+            "description": "Daging ayam yang dimasak crispy disiram saos pilihan yang lezat",
+            "price": 25
+        },
+        {
+            "id": 4,
+            "image": "/src/asset/spaghetti-bolognese.jpg",
+            "cattegory": "pasta",
+            "name": "spaghetti bolognese",
+            "description": "Spaghetti yang dimasak dengan saos pasta tomat dan daging sapi cincang yang diberi bumbu-bumbu gurih",
+            "price": 25
+        },
+        {
+            "id":5,
+            "image": "/src/asset/spaghetti-sambal-matah.jpg",
+            "cattegory": "pasta",
+            "name": "spaghetti sambal matah",
+            "description": "Spaghetti yang dimasak dengan khas tradisional sambal matah yang segar",
+            "price": 25
+        },
+        {
+            "id": 6,
+            "image": "https://www.allrecipes.com/thmb/Y7ftij8uq7sM2VpxGt-RHZg3yaA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/11973-spaghetti-carbonara-mfs-042-21d5decdffde4a1faa94a21725ce9cc3.jpg",
+            "cattegory": "pasta",
+            "name": "spaghetti carbonara",
+            "description": "Spaghetti yang dimasak dengan saos krim, keju, dan daging slice yang diberi bumbu-bumbu gurih",
+            "price": 25
+        },
+        {
+            "id": 7,
+            "image": "/src/asset/classic-burger.jpg",
+            "cattegory": "burger",
+            "name": "classic burger",
+            "description": "Roti burger dengan patty tebal dan french fries sebagai side dishes",
+            "price": 25
+        },
+        {
+            "id": 8,
+            "image": "/src/asset/cheese-burger.jpg",
+            "cattegory": "burger",
+            "name": "cheese burger",
+            "description": "Roti burger dengan patty tebal serta keju slice diatasnya yang lezat",
+            "price": 28
+        },
+        {
+            "id": 9,
+            "image": "/src/asset/asiana-chicken-burger.jpg",
+            "cattegory": "burger",
+            "name": "asiana chicken burger",
+            "description": "Burger dengan crispy chicken dioles bumbu asia dan french fries sebagai side dishes",
+            "price": 25
+        },
+        {
+            "id": 10,
+            "image": "/src/asset/french-fries-bolocheese.jpg",
+            "cattegory": "snack",
+            "name": "french fries bolocheese",
+            "description": "Kentang goreng dengan topping saos bolognese dicampur saos keju yang gurih",
+            "price": 20
+        },
+        {
+            "id": 11,
+            "image": "/src/asset/french-fries-original.jpg",
+            "cattegory": "snack",
+            "name": "french fries original",
+            "description": "Kentang goreng ditaburi sedikit garam hingga menjadi gurih",
+            "price": 12
+        },
+        {
+            "id": 12,
+            "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=1080/assets/search/usecase/cheese_french_fries_zdish.png",
+            "cattegory": "snack",
+            "name": "french fries cheese",
+            "description": "Kentang goreng dengan topping saos keju yang gurih",
+            "price": 15
+        },
+        {
+            "id": 13,
+            "image": "/src/asset/butter-rice-chicken-barbeque.jpg",
+            "cattegory": "special rice",
+            "name": "butter rice chicken barbeque",
+            "description": "Nasi yang dengan butter diberi bumbu-bumbu gurih ditambah daging ayam saos barbeque",
+            "price": 18
+        },
+        {
+            "id": 14,
+            "image": "/src/asset/butter-rice-chicken-black-papper.jpg",
+            "cattegory": "special rice",
+            "name": "butter rice chicken black papper",
+            "description": "Nasi yang dengan butter diberi bumbu-bumbu gurih ditambah daging ayam saos black papper yang spicy",
+            "price": 18
+        },
+        {
+            "id": 15,
+            "image": "/src/asset/butter-rice-chicken-sambal-matah.jpg",
+            "cattegory": "special rice",
+            "name": "butter rice chicken sambal matah",
+            "description": "Nasi yang dimasak dengan butter diberi bumbu-bumbu gurih ditambah daging ayam masak sambal matah",
+            "price": 18
+        },
+        {
+            "id": 16,
+            "image": "/src/asset/nasi-chicken-teriyaki.jpg",
+            "cattegory": "special rice",
+            "name": "nasi chicken teriyaki",
+            "description": "Nasi ditambah daging ayam yang dimasak saos teriyaki yang yummy",
+            "price": 23
+        },
+        {
+            "id": 17,
+            "image": "/src/asset/nasi-beef-teriyaki.jpg",
+            "cattegory": "special rice",
+            "name": "nasi beef teriyaki",
+            "description": "Nasi ditambah daging sapi slice yang dimasak saos teriyaki yang yummy",
+            "price": 28
+        },
+        {
+            "id": 18,
+            "image": "/src/asset/milkshake-chocolate.jpg",
+            "cattegory": "minuman",
+            "name": "milkshake chocolate",
+            "description": "Perpaduan coklat dan susu fresh yang dingin memberikan kesegaran",
+            "price": 13
+        },
+        {
+            "id": 19,
+            "image": "https://www.butteredsideupblog.com/wp-content/uploads/2023/06/How-to-Make-a-Strawberry-Milkshake-Without-Ice-Cream-17-scaled.jpg",
+            "cattegory": "minuman",
+            "name": "milkshake strawberry",
+            "description": "Perpaduan strawberry dan susu fresh yang dingin memberikan kesegaran",
+            "price": 13
+        },
+        {
+            "id": 20,
+            "image": "https://confessionsofabakingqueen.com/wp-content/uploads/2023/04/Oreo-Milkshake-featured-image-1-of-1.jpg",
+            "cattegory": "minuman",
+            "name": "milkshake vanilla oreo",
+            "description": "Perpaduan vanilla oreo dan susu fresh yang dingin memberikan kesegaran",
+            "price": 13
+        },
+        {
+            "id": 21,
+            "image": "https://www.thedinnerbite.com/wp-content/uploads/2021/05/iced-tea-recipe-img-4.jpg",
+            "cattegory": "minuman",
+            "name": "lemon tea",
+            "description": "Minuman dingin dengan rasa lemon yang menyegarkan",
+            "price": 10
+        },
+        {
+            "id":22,
+            "image": "https://assets.bonappetit.com/photos/57aca9caf1c801a1038bc6aa/1:1/w_3731,h_3731,c_limit/cold-brew-plum-iced-tea.jpg",
+            "cattegory": "minuman",
+            "name": "ice tea",
+            "description": "Minuman dingin dengan rasa teh alami yang menyegarkan",
+            "price": 6
+        },
+        {
+            "id": 23,
+            "image": "https://img.lazcdn.com/g/p/ab9f9495e773e447b9f412cb4cf2a4c2.jpg_960x960q80.jpg_.webp",
+            "cattegory": "minuman",
+            "name": "mineral water",
+            "description": "Minuman tawar dengan kesegaran alami yang menyejukkan",
+            "price": 13
+        }
+    ],
+    "promo": [
+        {
+            "id": 1,
+            "image": "/src/asset/promo-1.jpg",
+            "title": "discount day 50%",
+            "description": "Beli varian menu apa aja yang kamu mau buat bisa langsung dapetin diskon 50% (maksimal 20K) disetiap pembelian.",
+            "expired": "31 maret 2024"
+        },
+        {
+            "id": 2,
+            "image": "/src/asset/promo-2.jpg",
+            "title": "beli 2 gratis 1",
+            "description": "Beli dua menu varian apa aja biar bisa langsung dapet tambahan satu porsi gratis dari varian apapun yang kamu mau.",
+            "expired": "31 maret 2024"
+        },
+        {
+            "id": 3,
+            "image": "/src/asset/promo-3.jpg",
+            "title": "gratis minum atau ngemil",
+            "description": "Beli dua porsi spaghetti varian apa aja terus pilih mau dapet gratis lemon tea atau french fries original.",
+            "expired": "31 maret 2024"
+        }
+    ],
+    "favourite_menu": [
+        {
+            "id": 1,
+            "image": "/src/asset/beef-steak.jpg",
+            "cattegory": "steak",
+            "name": "beef steak",
+            "description": "Daging sapi yang dimarinasi dengan bumbu khas serta diolesi saos yang lezat",
+            "price": 38
+        },
+        {
+            "id": 4,
+            "image": "/src/asset/spaghetti-bolognese.jpg",
+            "cattegory": "pasta",
+            "name": "spaghetti bolognese",
+            "description": "Spaghetti yang dimasak dengan saos pasta tomat dan daging sapi cincang yang diberi bumbu-bumbu gurih",
+            "price": 25
+        },
+        {
+            "id": 8,
+            "image": "/src/asset/cheese-burger.jpg",
+            "cattegory": "burger",
+            "name": "cheese burger",
+            "description": "Roti burger dengan patty tebal serta keju slice diatasnya yang lezat",
+            "price": 28
+        },
+        {
+            "id": 15,
+            "image": "/src/asset/butter-rice-chicken-sambal-matah.jpg",
+            "cattegory": "special rice",
+            "name": "butter rice chicken sambal matah",
+            "description": "Nasi yang dimasak dengan butter diberi bumbu-bumbu gurih ditambah daging ayam masak sambal matah",
+            "price": 18
+        },
+        {
+            "id": 17,
+            "image": "/src/asset/nasi-beef-teriyaki.jpg",
+            "cattegory": "special rice",
+            "name": "nasi beef teriyaki",
+            "description": "Nasi ditambah daging sapi slice yang dimasak saos teriyaki yang yummy",
+            "price": 28
+        },
+        {
+            "id": 10,
+            "image": "/src/asset/french-fries-bolocheese.jpg",
+            "cattegory": "snack",
+            "name": "french fries bolocheese",
+            "description": "Kentang goreng dengan topping saos bolognese dicampur saos keju yang gurih",
+            "price": 20
+        }
+    ],
+    "interesting_promo": [
+        {
+            "id": 1,
+            "image": "/src/asset/promo-1.jpg",
+            "title": "discount day 50%",
+            "description": "Beli varian menu apa aja yang kamu mau buat bisa langsung dapetin diskon 50% (maksimal 20K) disetiap pembelian.",
+            "expired": "31 maret 2024"
+        }
+    ]
+}
