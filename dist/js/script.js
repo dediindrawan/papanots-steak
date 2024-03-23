@@ -1,28 +1,45 @@
 const data = '/src/data/data.json';
 
 async function getSourceData() {
-    const response = await fetch(data);
+    try {
+        const response = await fetch(data);
 
-    if (!response.ok) {
-        throw new Error(response.statusText);
+        if (!response.ok) {
+            throw new Error(response.statusText);
+        };
+
+        const results = await response.json();
+
+        if (location.pathname === '/pages/menu.html' || location.pathname === '/index.html') getMenuResult(results);
+
+        if (location.pathname === '/pages/promo.html' || location.pathname === '/index.html') getPromoResult(results);
+    } catch (error) {
+        if (location.pathname === '/pages/menu.html') {
+            const cardWrapper = document.querySelector('.card-wrapper');
+
+            const responseError = document.createElement('h1');
+            responseError.innerText = error;
+
+            cardWrapper.appendChild(responseError);
+        };
+
+        if (location.pathname === '/pages/promo.html') {
+            const promoCardWrapper = document.querySelector('.promo-card-wrapper');
+
+            const responseError = document.createElement('h1');
+            responseError.innerText = error;
+
+            promoCardWrapper.appendChild(responseError);
+        };
     };
-
-    const results = await response.json();
-
-    if (location.pathname === '/pages/menu.html' || location.pathname === '/index.html') getMenuResult(results);
-
-    if (location.pathname === '/pages/promo.html' || location.pathname === '/index.html') getPromoResult(results);
-
 };
-getSourceData();
+document.addEventListener('DOMContentLoaded', getSourceData);
 
 function getMenuResult(results) {
     const menus = results.menu;
     const favouriteMenus = results.favourite_menu;
 
-    listMenu(menus, favouriteMenus);
-    searchMenu(menus);
-    filterMenu(menus);
+    return listMenu(menus, favouriteMenus) || searchMenu(menus) || filterMenu(menus);
 };
 
 function searchMenu(menus) {
@@ -81,9 +98,9 @@ function filterMenu(menus) {
                 const filterMenu = menus.filter(menu => menu.cattegory === filterButton.textContent);
 
                 if (filterButton.textContent === 'semua menu') {
-                    listMenu(menus);
+                    return listMenu(menus);
                 } else {
-                    listMenu(filterMenu);
+                    return listMenu(filterMenu);
                 };
             });
         });
@@ -92,14 +109,15 @@ function filterMenu(menus) {
 
 function listMenu(menus, favouriteMenus, filterMenu) {
     if (location.pathname === '/pages/menu.html') {
-
         const cardWrapper = document.querySelector('.card-wrapper');
         cardWrapper.innerHTML = '';
 
-        if (filterMenu) {
-            filterMenu.forEach(menu => {
-                let menuList =
-                    `
+        try {
+            if (filterMenu) {
+                filterMenu.forEach(menu => {
+
+                    let menuList =
+                        `
                         <figure class="card">
                             <span>
                                 <img src="${menu.image}" alt="image" class="menu-image">
@@ -112,12 +130,12 @@ function listMenu(menus, favouriteMenus, filterMenu) {
                         </figure>
                         `;
 
-                cardWrapper.innerHTML += menuList;
-            });
-        } else {
-            menus.forEach(menu => {
-                let menuList =
-                    `
+                    cardWrapper.innerHTML += menuList;
+                });
+            } else {
+                menus.forEach(menu => {
+                    let menuList =
+                        `
                         <figure id="${menu.id}" class="card">
                             <span>
                                 <img src="${menu.image}" alt="image" class="menu-image">
@@ -130,8 +148,18 @@ function listMenu(menus, favouriteMenus, filterMenu) {
                         </figure>
                         `;
 
-                cardWrapper.innerHTML += menuList;
-            });
+                    cardWrapper.innerHTML += menuList;
+                });
+            };
+        } catch (error) {
+            if (location.pathname === '/pages/menu.html') {
+                const cardWrapper = document.querySelector('.card-wrapper');
+
+                const responseError = document.createElement('h1');
+                responseError.innerText = error;
+
+                cardWrapper.appendChild(responseError);
+            };
         };
     };
 
@@ -162,7 +190,7 @@ function getPromoResult(results) {
     const promos = results.promo;
     const interestingPromos = results.interesting_promo;
 
-    listPromo(promos, interestingPromos);
+    return listPromo(promos, interestingPromos);
 };
 
 function listPromo(promos, interestingPromos) {
@@ -195,7 +223,7 @@ function listPromo(promos, interestingPromos) {
 
             let interestingPromoList =
                 `
-                <a href="/pages/promo.html#${interestingPromo.id}" id="${interestingPromo.id}">
+                <a href="/pages/promo.html#${interestingPromo.id}">
                     <figure class="promo-card">
                         <img src="${interestingPromo.image}" alt="image" class="promo-image">
                         <figcaption class="promo-description">
