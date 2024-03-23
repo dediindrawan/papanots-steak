@@ -8,7 +8,7 @@ function windowOnScroll() {
             ctaButtonWhatsapp.classList.remove('hide-icon');
         }, 1500);
 
-        if (location.pathname === '/index.html' || location.pathname === '/pages/menu.html') {
+        if (location.pathname === '/' || location.pathname === '/index.html' || location.pathname === '/pages/menu.html') {
             const searchFormWrapper = document.querySelector('.search-form-wrapper');
             searchFormWrapper.classList.toggle('sticky-background', scrollY >= 165);
         };

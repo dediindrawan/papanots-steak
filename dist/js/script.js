@@ -10,30 +10,18 @@ async function getSourceData() {
 
         const results = await response.json();
 
-        if (location.pathname === '/pages/menu.html' || location.pathname === '/index.html') getMenuResult(results);
-
-        if (location.pathname === '/pages/promo.html' || location.pathname === '/index.html') getPromoResult(results);
+        getMenuResult(results);
+        getPromoResult(results);
     } catch (error) {
-        if (location.pathname === '/pages/menu.html') {
-            const cardWrapper = document.querySelector('.card-wrapper');
+        const cardWrapper = document.querySelector('.card-wrapper');
 
-            const responseError = document.createElement('h1');
-            responseError.innerText = error;
+        const responseError = document.createElement('h1');
+        responseError.innerText = error;
 
-            cardWrapper.appendChild(responseError);
-        };
-
-        if (location.pathname === '/pages/promo.html') {
-            const promoCardWrapper = document.querySelector('.promo-card-wrapper');
-
-            const responseError = document.createElement('h1');
-            responseError.innerText = error;
-
-            promoCardWrapper.appendChild(responseError);
-        };
+        cardWrapper.appendChild(responseError);
     };
 };
-document.addEventListener('DOMContentLoaded', getSourceData);
+getSourceData();
 
 function getMenuResult(results) {
     const menus = results.menu;
@@ -163,7 +151,7 @@ function listMenu(menus, favouriteMenus, filterMenu) {
         };
     };
 
-    if (location.pathname === '/index.html') {
+    if (location.pathname === '/' || location.pathname === '/index.html') {
         favouriteMenus.forEach(favouriteMenu => {
             const cardWrapper = document.querySelector('.card-wrapper');
 
@@ -217,7 +205,7 @@ function listPromo(promos, interestingPromos) {
         });
     };
 
-    if (location.pathname === '/index.html') {
+    if (location.pathname === '/' || location.pathname === '/index.html') {
         interestingPromos.forEach(interestingPromo => {
             const promoCardWrapper = document.querySelector('.promo-card-wrapper');
 
