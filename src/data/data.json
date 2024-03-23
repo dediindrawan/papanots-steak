@@ -18,7 +18,7 @@
         },
         {
             "id": 3,
-            "image": "https://cdn.yummy.co.id/content-images/images/20230202/ZI4XE1dIfNAyyHuTSm7zTWzHJs5Bt8jY-31363735333236333037d41d8cd98f00b204e9800998ecf8427e.jpg?x-oss-process=image/resize,w_388,h_388,m_fixed,x-oss-process=image/format,webp",
+            "image": "/src/asset/dummy-image.jpg",
             "cattegory": "steak",
             "name": "cripsy chicken steak",
             "description": "Daging ayam yang dimasak crispy disiram saos pilihan yang lezat",
@@ -42,7 +42,7 @@
         },
         {
             "id": 6,
-            "image": "https://www.allrecipes.com/thmb/Y7ftij8uq7sM2VpxGt-RHZg3yaA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/11973-spaghetti-carbonara-mfs-042-21d5decdffde4a1faa94a21725ce9cc3.jpg",
+            "image": "/src/asset/dummy-image.jpg",
             "cattegory": "pasta",
             "name": "spaghetti carbonara",
             "description": "Spaghetti yang dimasak dengan saos krim, keju, dan daging slice yang diberi bumbu-bumbu gurih",
@@ -90,7 +90,7 @@
         },
         {
             "id": 12,
-            "image": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=1080/assets/search/usecase/cheese_french_fries_zdish.png",
+            "image": "/src/asset/dummy-image.jpg",
             "cattegory": "snack",
             "name": "french fries cheese",
             "description": "Kentang goreng dengan topping saos keju yang gurih",
@@ -146,7 +146,7 @@
         },
         {
             "id": 19,
-            "image": "https://www.butteredsideupblog.com/wp-content/uploads/2023/06/How-to-Make-a-Strawberry-Milkshake-Without-Ice-Cream-17-scaled.jpg",
+            "image": "/src/asset/dummy-image.jpg",
             "cattegory": "minuman",
             "name": "milkshake strawberry",
             "description": "Perpaduan strawberry dan susu fresh yang dingin memberikan kesegaran",
@@ -154,7 +154,7 @@
         },
         {
             "id": 20,
-            "image": "https://confessionsofabakingqueen.com/wp-content/uploads/2023/04/Oreo-Milkshake-featured-image-1-of-1.jpg",
+            "image": "/src/asset/dummy-image.jpg",
             "cattegory": "minuman",
             "name": "milkshake vanilla oreo",
             "description": "Perpaduan vanilla oreo dan susu fresh yang dingin memberikan kesegaran",
@@ -162,7 +162,7 @@
         },
         {
             "id": 21,
-            "image": "https://www.thedinnerbite.com/wp-content/uploads/2021/05/iced-tea-recipe-img-4.jpg",
+            "image": "/src/asset/dummy-image.jpg",
             "cattegory": "minuman",
             "name": "lemon tea",
             "description": "Minuman dingin dengan rasa lemon yang menyegarkan",
@@ -170,7 +170,7 @@
         },
         {
             "id":22,
-            "image": "https://assets.bonappetit.com/photos/57aca9caf1c801a1038bc6aa/1:1/w_3731,h_3731,c_limit/cold-brew-plum-iced-tea.jpg",
+            "image": "/src/asset/dummy-image.jpg",
             "cattegory": "minuman",
             "name": "ice tea",
             "description": "Minuman dingin dengan rasa teh alami yang menyegarkan",
@@ -178,7 +178,7 @@
         },
         {
             "id": 23,
-            "image": "https://img.lazcdn.com/g/p/ab9f9495e773e447b9f412cb4cf2a4c2.jpg_960x960q80.jpg_.webp",
+            "image": "/src/asset/dummy-image.jpg",
             "cattegory": "minuman",
             "name": "mineral water",
             "description": "Minuman tawar dengan kesegaran alami yang menyejukkan",
