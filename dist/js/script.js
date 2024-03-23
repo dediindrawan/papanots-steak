@@ -1,37 +1,18 @@
 const data = '/src/data/data.json';
 
 async function getSourceData() {
-    try {
-        const response = await fetch(data);
+    const response = await fetch(data);
 
-        if (!response.ok) {
-            throw new Error(response.statusText);
-        };
-
-        const results = await response.json();
-
-        if (location.pathname === '/pages/menu.html' || location.pathname === '/index.html') getMenuResult(results);
-
-        if (location.pathname === '/pages/promo.html' || location.pathname === '/index.html') getPromoResult(results);
-    } catch (error) {
-        if (location.pathname === '/pages/menu.html') {
-            const cardWrapper = document.querySelector('.card-wrapper');
-
-            const responseError = document.createElement('h1');
-            responseError.innerText = error;
-
-            cardWrapper.appendChild(responseError);
-        };
-
-        if (location.pathname === '/pages/promo.html') {
-            const promoCardWrapper = document.querySelector('.promo-card-wrapper');
-
-            const responseError = document.createElement('h1');
-            responseError.innerText = error;
-
-            promoCardWrapper.appendChild(responseError);
-        };
+    if (!response.ok) {
+        throw new Error(response.statusText);
     };
+
+    const results = await response.json();
+
+    if (location.pathname === '/pages/menu.html' || location.pathname === '/index.html') getMenuResult(results);
+
+    if (location.pathname === '/pages/promo.html' || location.pathname === '/index.html') getPromoResult(results);
+
 };
 getSourceData();
 
@@ -39,7 +20,9 @@ function getMenuResult(results) {
     const menus = results.menu;
     const favouriteMenus = results.favourite_menu;
 
-    return listMenu(menus, favouriteMenus) || searchMenu(menus) || filterMenu(menus);
+    listMenu(menus, favouriteMenus);
+    searchMenu(menus);
+    filterMenu(menus);
 };
 
 function searchMenu(menus) {
@@ -113,12 +96,10 @@ function listMenu(menus, favouriteMenus, filterMenu) {
         const cardWrapper = document.querySelector('.card-wrapper');
         cardWrapper.innerHTML = '';
 
-        try {
-            if (filterMenu) {
-                filterMenu.forEach(menu => {
-
-                    let menuList =
-                        `
+        if (filterMenu) {
+            filterMenu.forEach(menu => {
+                let menuList =
+                    `
                         <figure class="card">
                             <span>
                                 <img src="${menu.image}" alt="image" class="menu-image">
@@ -131,12 +112,12 @@ function listMenu(menus, favouriteMenus, filterMenu) {
                         </figure>
                         `;
 
-                    cardWrapper.innerHTML += menuList;
-                });
-            } else {
-                menus.forEach(menu => {
-                    let menuList =
-                        `
+                cardWrapper.innerHTML += menuList;
+            });
+        } else {
+            menus.forEach(menu => {
+                let menuList =
+                    `
                         <figure id="${menu.id}" class="card">
                             <span>
                                 <img src="${menu.image}" alt="image" class="menu-image">
@@ -149,18 +130,8 @@ function listMenu(menus, favouriteMenus, filterMenu) {
                         </figure>
                         `;
 
-                    cardWrapper.innerHTML += menuList;
-                });
-            };
-        } catch (error) {
-            if (location.pathname === '/pages/menu.html') {
-                const cardWrapper = document.querySelector('.card-wrapper');
-
-                const responseError = document.createElement('h1');
-                responseError.innerText = error;
-
-                cardWrapper.appendChild(responseError);
-            };
+                cardWrapper.innerHTML += menuList;
+            });
         };
     };
 
@@ -170,7 +141,7 @@ function listMenu(menus, favouriteMenus, filterMenu) {
 
             let favouriteMenuList =
                 `
-                <figure id="${favouriteMenu.id}" class="card" data-cattegory="${favouriteMenu.cattegory}">
+                <figure id="${favouriteMenu.id}" class="card">
                     <span>
                         <img src="${favouriteMenu.image}" alt="image" class="menu-image">
                         <figcaption class="menu-description">
@@ -191,7 +162,7 @@ function getPromoResult(results) {
     const promos = results.promo;
     const interestingPromos = results.interesting_promo;
 
-    return listPromo(promos, interestingPromos);
+    listPromo(promos, interestingPromos);
 };
 
 function listPromo(promos, interestingPromos) {

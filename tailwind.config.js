@@ -8,8 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        oleoScript: ['Oleo Script', 'system-ui']
+        poppins: ['Poppins', 'sans-serif']
       },
       width: {
         '300': '300%'
