@@ -5,7 +5,7 @@
             "image": "/src/asset/beef-steak.jpg",
             "cattegory": "steak",
             "name": "beef steak",
-            "description": "Daging sapi yang dimarinasi dengan bumbu khas serta diolesi saos yang lezat",
+            "description": "Potongan daging sapi pilihan yang diracik dengan bumbu khas yang otentik. Dipanggang hingga mencapai tingkat kematangan ideal, dan disajikan dengan paduan saus spesial yang nikmat dan lezat.",
             "price": 38
         },
         {
@@ -13,15 +13,15 @@
             "image": "/src/asset/grill-chicken-steak.jpg",
             "cattegory": "steak",
             "name": "grill chicken steak",
-            "description": "Daging ayam yang dipanggang dengan bumbu-bumbu serta saos yang lezat",
+            "description": "Potongan daging ayam pilihan yang diracik dengan bumbu khas yang otentik. Dipanggang hingga mencapai tingkat kematangan ideal, dan disajikan dengan paduan saus spesial yang nikmat dan lezat.",
             "price": 30
         },
         {
             "id": 3,
             "image": "/src/asset/dummy-image.jpg",
             "cattegory": "steak",
-            "name": "cripsy chicken steak",
-            "description": "Daging ayam yang dimasak crispy disiram saos pilihan yang lezat",
+            "name": "crispy chicken steak",
+            "description": "Potongan daging ayam pilihan yang diolah dengan tepung crispy yang gurih hingga menghasilkan sensasi renyah diluar dan lembut didalam. Disajikan juga dengan paduan saus spesial yang nikmat dan lezat.",
             "price": 25
         },
         {
@@ -29,7 +29,7 @@
             "image": "/src/asset/spaghetti-bolognese.jpg",
             "cattegory": "pasta",
             "name": "spaghetti bolognese",
-            "description": "Spaghetti yang dimasak dengan saos pasta tomat dan daging sapi cincang yang diberi bumbu-bumbu gurih",
+            "description": "Pasta al dente yang dipadu dengan saus bolognese yang terbuat dari daging sapi giling yang dipanggang sempurna dan tomat segar yang diolah dengan hati-hati agar cita rasanya meresap kedalam tiap helai spaghetti.",
             "price": 25
         },
         {
@@ -37,7 +37,7 @@
             "image": "/src/asset/spaghetti-sambal-matah.jpg",
             "cattegory": "pasta",
             "name": "spaghetti sambal matah",
-            "description": "Spaghetti yang dimasak dengan khas tradisional sambal matah yang segar",
+            "description": "Paduan antara spaghetti yang al dente dan sambal matah yang diracik dengan bumbu khas tradisional yang otentik. Gabungan cita rasa tradisional nusantara dengan pasta yang nikmat dan lezat.",
             "price": 25
         },
         {
@@ -45,7 +45,7 @@
             "image": "/src/asset/dummy-image.jpg",
             "cattegory": "pasta",
             "name": "spaghetti carbonara",
-            "description": "Spaghetti yang dimasak dengan saos krim, keju, dan daging slice yang diberi bumbu-bumbu gurih",
+            "description": "Pasta al dente yang dipadu dengan saus creamy carbonara yang terbuat dari campuran keju dan potongan daging sapi yang gurih yang diolah dengan hati-hati agar cita rasanya meresap kedalam tiap helai spaghetti.",
             "price": 25
         },
         {
@@ -53,7 +53,7 @@
             "image": "/src/asset/classic-burger.jpg",
             "cattegory": "burger",
             "name": "classic burger",
-            "description": "Roti burger dengan patty tebal dan french fries sebagai side dishes",
+            "description": "Patty tebal yang dipanggang hingga mencapai tingkat kematangan ideal. Disempurnakan dengan irisan tomat segar dan daun selada yang renyah diantara roti burger yang lembut dan hangat.",
             "price": 25
         },
         {
@@ -61,7 +61,7 @@
             "image": "/src/asset/cheese-burger.jpg",
             "cattegory": "burger",
             "name": "cheese burger",
-            "description": "Roti burger dengan patty tebal serta keju slice diatasnya yang lezat",
+            "description": "Patty tebal yang dipanggang hingga mencapai tingkat kematangan ideal. Disempurnakan dengan lapisan keju meleleh diatasnya dan irisan sayuran segar diantara roti burger yang lembut dan hangat.",
             "price": 28
         },
         {
@@ -69,7 +69,7 @@
             "image": "/src/asset/asiana-chicken-burger.jpg",
             "cattegory": "burger",
             "name": "asiana chicken burger",
-            "description": "Burger dengan crispy chicken dioles bumbu asia dan french fries sebagai side dishes",
+            "description": "Potongan daging ayam yang dipadu dengan sentuhan rempah-rempah khas asia. Disempurnakan dengan irisan sayuran segar dan saus spesial yang otentik diantara roti burger yang lembut dan hangat.",
             "price": 25
         },
         {
@@ -77,7 +77,7 @@
             "image": "/src/asset/french-fries-bolocheese.jpg",
             "cattegory": "snack",
             "name": "french fries bolocheese",
-            "description": "Kentang goreng dengan topping saos bolognese dicampur saos keju yang gurih",
+            "description": "Potongan kentang yang digoreng hingga keemasan dengan tekstur renyah diluar dan lembut didalam. Disajikan dengan topping saus bolognese yang dipadukan dengan cita rasa saus keju yang nikmat dan gurih.",
             "price": 20
         },
         {
@@ -85,7 +85,7 @@
             "image": "/src/asset/french-fries-original.jpg",
             "cattegory": "snack",
             "name": "french fries original",
-            "description": "Kentang goreng ditaburi sedikit garam hingga menjadi gurih",
+            "description": "Potongan kentang yang digoreng hingga keemasan dengan tekstur renyah diluar dan lembut didalam. Disajikan dengan taburan garam yang pas untuk menghasilkan cita rasa klasik yang nikmat dan gurih.",
             "price": 12
         },
         {
@@ -93,7 +93,7 @@
             "image": "/src/asset/dummy-image.jpg",
             "cattegory": "snack",
             "name": "french fries cheese",
-            "description": "Kentang goreng dengan topping saos keju yang gurih",
+            "description": "Potongan kentang yang digoreng hingga keemasan dengan tekstur renyah diluar dan lembut didalam. Disajikan dengan topping saus keju yang memberikan kombinasi sempurna antara renyahnya kentang dan lezatnya keju.",
             "price": 15
         },
         {
@@ -101,23 +101,23 @@
             "image": "/src/asset/butter-rice-chicken-barbeque.jpg",
             "cattegory": "special rice",
             "name": "butter rice chicken barbeque",
-            "description": "Nasi yang dengan butter diberi bumbu-bumbu gurih ditambah daging ayam saos barbeque",
+            "description": "Potongan daging ayam panggang yang berpadu dengan saus barbeque yang lezat. Disajikan dangan nasi yang diberi sentuhan butter yang menawarkan perpaduan sempurna antara cita rasa manis dan gurih.",
             "price": 18
         },
         {
             "id": 14,
-            "image": "/src/asset/butter-rice-chicken-black-papper.jpg",
+            "image": "/src/asset/butter-rice-chicken-black-pepper.jpg",
             "cattegory": "special rice",
-            "name": "butter rice chicken black papper",
-            "description": "Nasi yang dengan butter diberi bumbu-bumbu gurih ditambah daging ayam saos black papper yang spicy",
+            "name": "butter rice chicken black pepper",
+            "description": "Potongan daging ayam panggang yang berpadu dengan saus black pepper yang aromatic. Disajikan dengan nasi yang diberi sentuhan butter yang menawarkan perpaduan sempurna antara cita rasa gurih dan pedas.",
             "price": 18
-        },
+        }, 
         {
             "id": 15,
             "image": "/src/asset/butter-rice-chicken-sambal-matah.jpg",
             "cattegory": "special rice",
             "name": "butter rice chicken sambal matah",
-            "description": "Nasi yang dimasak dengan butter diberi bumbu-bumbu gurih ditambah daging ayam masak sambal matah",
+            "description": "Potongan daging ayam panggang yang berpadu dengan sambal matah segar. Disajikan dengan nasi yang diberi sentuhan butter yang menawarkan perpaduan yang eksotis antara cita rasa pedas dan segar.",
             "price": 18
         },
         {
@@ -125,7 +125,7 @@
             "image": "/src/asset/nasi-chicken-teriyaki.jpg",
             "cattegory": "special rice",
             "name": "nasi chicken teriyaki",
-            "description": "Nasi ditambah daging ayam yang dimasak saos teriyaki yang yummy",
+            "description": "Potongan daging ayam yang dilumuri saus teriyaki yang khas dan kaya rasa. Disajikan dengan nasi putih hangat dengan kombinasi sempurna dari manisnya saus teriyaki dan kelezatan ayam yang lembut dan juicy.",
             "price": 23
         },
         {
@@ -133,7 +133,7 @@
             "image": "/src/asset/nasi-beef-teriyaki.jpg",
             "cattegory": "special rice",
             "name": "nasi beef teriyaki",
-            "description": "Nasi ditambah daging sapi slice yang dimasak saos teriyaki yang yummy",
+            "description": "Irisan daging sapi yang dimasak dengan saus teriyaki yang khas dan kaya rasa. Disajikan dengan nasi putih hangat dengan kombinasi sempurna dari manisnya saus teriyaki dan kelezatan daging sapi yang lembut.",
             "price": 28
         },
         {
@@ -141,7 +141,7 @@
             "image": "/src/asset/milkshake-chocolate.jpg",
             "cattegory": "minuman",
             "name": "milkshake chocolate",
-            "description": "Perpaduan coklat dan susu fresh yang dingin memberikan kesegaran",
+            "description": "Minuman dingin menyegarkan. Perpaduan antara susu segar yang berkualitas dengan bubuk cokelat yang khas dan kaya rasa.",
             "price": 13
         },
         {
@@ -149,7 +149,7 @@
             "image": "/src/asset/dummy-image.jpg",
             "cattegory": "minuman",
             "name": "milkshake strawberry",
-            "description": "Perpaduan strawberry dan susu fresh yang dingin memberikan kesegaran",
+            "description": "Minuman dingin menyegarkan. Perpaduan antara susu segar yang berkualitas dengan bubuk strawberry yang khas dan kaya rasa.",
             "price": 13
         },
         {
@@ -157,7 +157,7 @@
             "image": "/src/asset/dummy-image.jpg",
             "cattegory": "minuman",
             "name": "milkshake vanilla oreo",
-            "description": "Perpaduan vanilla oreo dan susu fresh yang dingin memberikan kesegaran",
+            "description": "Minuman dingin menyegarkan. Perpaduan antara susu segar yang berkualitas dengan kombinasi biskuit oreo dan bubuk vanilla yang khas dan kaya rasa.",
             "price": 13
         },
         {
@@ -165,7 +165,7 @@
             "image": "/src/asset/dummy-image.jpg",
             "cattegory": "minuman",
             "name": "lemon tea",
-            "description": "Minuman dingin dengan rasa lemon yang menyegarkan",
+            "description": "Minuman dingin menyegarkan. Perpaduan antara teh hitam yang berkualitas dengan perasan lemon segar didalamnya.",
             "price": 10
         },
         {
@@ -173,7 +173,7 @@
             "image": "/src/asset/dummy-image.jpg",
             "cattegory": "minuman",
             "name": "ice tea",
-            "description": "Minuman dingin dengan rasa teh alami yang menyegarkan",
+            "description": "Minuman dingin menyegarkan. Perpaduan antara teh yang berkualitas dengan sentuhan manis yang pas dari gula didalamnya.",
             "price": 6
         },
         {
@@ -181,7 +181,7 @@
             "image": "/src/asset/dummy-image.jpg",
             "cattegory": "minuman",
             "name": "mineral water",
-            "description": "Minuman tawar dengan kesegaran alami yang menyejukkan",
+            "description": "Minuman sehat bermineral dengan kesegaran alami yang menyejukkan",
             "price": 13
         }
     ],
@@ -214,7 +214,7 @@
             "image": "/src/asset/beef-steak.jpg",
             "cattegory": "steak",
             "name": "beef steak",
-            "description": "Daging sapi yang dimarinasi dengan bumbu khas serta diolesi saos yang lezat",
+            "description": "Potongan daging sapi pilihan yang diracik dengan bumbu khas yang otentik. Dipanggang hingga mencapai tingkat kematangan ideal, dan disajikan dengan paduan saus spesial yang nikmat dan lezat.",
             "price": 38
         },
         {
@@ -222,7 +222,7 @@
             "image": "/src/asset/spaghetti-bolognese.jpg",
             "cattegory": "pasta",
             "name": "spaghetti bolognese",
-            "description": "Spaghetti yang dimasak dengan saos pasta tomat dan daging sapi cincang yang diberi bumbu-bumbu gurih",
+            "description": "Pasta al dente yang dipadu dengan saus bolognese yang terbuat dari daging sapi giling yang dipanggang sempurna dan tomat segar yang diolah dengan hati-hati agar cita rasanya meresap kedalam tiap helai spaghetti.",
             "price": 25
         },
         {
@@ -230,7 +230,7 @@
             "image": "/src/asset/cheese-burger.jpg",
             "cattegory": "burger",
             "name": "cheese burger",
-            "description": "Roti burger dengan patty tebal serta keju slice diatasnya yang lezat",
+            "description": "Patty tebal yang dipanggang hingga mencapai tingkat kematangan ideal. Disempurnakan dengan lapisan keju meleleh diatasnya dan irisan sayuran segar diantara roti burger yang lembut dan hangat.",
             "price": 28
         },
         {
@@ -238,7 +238,7 @@
             "image": "/src/asset/butter-rice-chicken-sambal-matah.jpg",
             "cattegory": "special rice",
             "name": "butter rice chicken sambal matah",
-            "description": "Nasi yang dimasak dengan butter diberi bumbu-bumbu gurih ditambah daging ayam masak sambal matah",
+            "description": "Potongan daging ayam panggang yang berpadu dengan sambal matah segar. Disajikan dengan nasi yang diberi sentuhan butter yang menawarkan perpaduan yang eksotis antara cita rasa pedas dan segar.",
             "price": 18
         },
         {
@@ -246,7 +246,7 @@
             "image": "/src/asset/nasi-beef-teriyaki.jpg",
             "cattegory": "special rice",
             "name": "nasi beef teriyaki",
-            "description": "Nasi ditambah daging sapi slice yang dimasak saos teriyaki yang yummy",
+            "description": "Irisan daging sapi yang dimasak dengan saus teriyaki yang khas dan kaya rasa. Disajikan dengan nasi putih hangat dengan kombinasi sempurna dari manisnya saus teriyaki dan kelezatan daging sapi yang lembut.",
             "price": 28
         },
         {
@@ -254,7 +254,7 @@
             "image": "/src/asset/french-fries-bolocheese.jpg",
             "cattegory": "snack",
             "name": "french fries bolocheese",
-            "description": "Kentang goreng dengan topping saos bolognese dicampur saos keju yang gurih",
+            "description": "Potongan kentang yang digoreng hingga keemasan dengan tekstur renyah diluar dan lembut didalam. Disajikan dengan topping saus bolognese yang dipadukan dengan cita rasa saus keju yang nikmat dan gurih.",
             "price": 20
         }
     ],
