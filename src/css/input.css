@@ -212,7 +212,7 @@
     }
 
     .menu-description h1 {
-        @apply capitalize font-semibold md:text-xl;
+        @apply mb-2 capitalize font-semibold md:text-xl;
     }
 
     .card h4 {
@@ -246,15 +246,15 @@
     }
 
     .promo-description {
-        @apply text-xs mt-4 md:text-lg;
+        @apply mt-4 md:text-lg;
     }
 
     .promo-description h1 { 
         @apply capitalize font-semibold md:text-xl;
     }
 
-    .promo-description p {
-        @apply my-4 md:text-base;
+    .promo-description small:not(:last-child) {
+        @apply my-4 inline-block leading-6 md:leading-7;
     }
 
     .promo-description small  i {

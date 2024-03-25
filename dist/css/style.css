@@ -1211,6 +1211,7 @@ html, body{
 }
 
 .menu-description h1{
+  margin-bottom: 0.5rem;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -1318,8 +1319,6 @@ html, body{
 
 .promo-description{
   margin-top: 1rem;
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 @media (min-width: 768px){
@@ -1341,15 +1340,16 @@ html, body{
   }
 }
 
-.promo-description p{
+.promo-description small:not(:last-child){
   margin-top: 1rem;
   margin-bottom: 1rem;
+  display: inline-block;
+  line-height: 1.5rem;
 }
 
 @media (min-width: 768px){
-  .promo-description p{
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .promo-description small:not(:last-child){
+    line-height: 1.75rem;
   }
 }
 

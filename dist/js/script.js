@@ -192,7 +192,7 @@ function listPromo(promos, interestingPromos) {
                     <img src="${promo.image}" alt="image" class="promo-image">
                     <figcaption class="promo-description">
                         <h1>${promo.title}</h1>
-                        <p>${promo.description}</p>
+                        <small>${promo.description}</small>
                         <small>
                             <i class="fa-regular fa-calendar-days"></i>
                             Berlaku hingga ${promo.expired}
