@@ -181,7 +181,7 @@
             "image": "/src/asset/dummy-image.jpg",
             "cattegory": "minuman",
             "name": "mineral water",
-            "description": "Minuman sehat bermineral dengan kesegaran alami yang menyejukkan",
+            "description": "Minuman sehat bermineral dengan kesegaran alami yang menyejukkan.",
             "price": 13
         }
     ],
@@ -264,6 +264,13 @@
             "image": "/src/asset/promo-1.jpg",
             "title": "discount day 50%",
             "description": "Beli varian menu apa aja yang kamu mau buat bisa langsung dapetin diskon 50% (maksimal 20K) disetiap pembelian.",
+            "expired": "31 maret 2024"
+        },
+        {
+            "id": 2,
+            "image": "/src/asset/promo-2.jpg",
+            "title": "beli 2 gratis 1",
+            "description": "Beli dua menu varian apa aja biar bisa langsung dapet tambahan satu porsi gratis dari varian apapun yang kamu mau.",
             "expired": "31 maret 2024"
         }
     ]

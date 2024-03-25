@@ -14,6 +14,10 @@
 
 /* components style */
 @layer components {
+    .container {
+        @apply min-w-full;
+    }
+
     /* cta button whatsapp */
     .cta-button-whatsapp {
         @apply -mb-1 fixed z-50 right-4 bottom-[8.5rem] transition-all duration-300 ease-in-out;
@@ -33,11 +37,11 @@
 
     /* nav area */
     .navbar {
-        @apply w-full p-4 fixed bottom-0 border-t-2 border-neutral-400 border-opacity-40 rounded-t-3xl backdrop-blur-lg;
+        @apply w-full p-4 fixed z-50 bottom-0 border-t-2 border-neutral-400 border-opacity-40 rounded-t-3xl backdrop-blur-lg;
     }
 
     .navbar ul {
-        @apply w-full flex items-center rounded-xl bg-white;
+        @apply max-w-xl mx-auto flex items-center rounded-xl bg-white;
     }
 
     .navbar ul li {
@@ -49,7 +53,7 @@
     }
 
     .navbar ul li a small {
-        @apply text-xs capitalize flex flex-col items-center gap-1;
+        @apply text-xs capitalize flex flex-col items-center gap-1 md:text-base;
     }
 
     .navbar ul li a small i {
@@ -58,7 +62,7 @@
 
     /* header area */
     .header-brand {
-        @apply py-2 px-4 flex justify-between items-center gap-4 text-white bg-default;
+        @apply py-2 px-4 flex justify-between items-center gap-4 text-white sm:px-8 md:px-20 bg-default;
     }
 
     .header-brand a {
@@ -66,15 +70,19 @@
     }
 
     .header-brand a img {
-        @apply w-[95%];
+        @apply w-48 max-w-64;
     }
 
     .header-brand figcaption ul {
         @apply flex items-center gap-4;
     }
 
+    .slide-container {
+        @apply sm:mt-4 sm:px-8 md:mt-8 md:px-20;
+    }
+
     .slide-wrapper {
-        @apply w-full relative overflow-hidden;
+        @apply w-full relative overflow-hidden sm:rounded-xl sm:bg-[url('/src/asset/bg-pattern.jpg')] sm:bg-contain;
     }
 
     .image-slider {
@@ -82,11 +90,11 @@
     }
 
     .slide {
-        @apply w-full flex;
+        @apply w-full flex sm:justify-center;
     }
 
     .slide figure img {
-        @apply w-full aspect-video;
+        @apply w-full aspect-video sm:max-h-52 md:max-h-72 lg:max-h-96;
     }
 
     .button-next {
@@ -106,15 +114,15 @@
     }
 
     .banner {
-        @apply h-40 px-4 capitalize grid place-items-center bg-cover bg-center bg-[url('/src/asset/bg-pattern.jpg')] text-white;
+        @apply h-40 px-4 capitalize grid place-items-center bg-[url('/src/asset/bg-pattern.jpg')] bg-cover text-white;
     }
 
     .banner div h1 {
-        @apply text-2xl text-center font-semibold;
+        @apply text-2xl text-center font-semibold md:text-4xl;
     }
 
     .breadcrumb {
-        @apply text-xs flex justify-center items-center gap-2;
+        @apply text-xs flex justify-center items-center gap-2 md:text-base;
     }
 
     .breadcrumb li i {
@@ -123,7 +131,7 @@
 
     /* aside area */
     .search-form-wrapper {
-        @apply w-full inline-block p-4 -translate-y-10 sticky top-10 z-10 transition-all duration-300 ease-in-out;
+        @apply w-full inline-block p-4 -translate-y-10 sticky top-10 z-10 transition-all duration-300 ease-in-out sm:px-28 md:px-36 lg:px-72;
     }
 
     .search-form-wrapper a {
@@ -155,9 +163,13 @@
     }
 
     /* main area */
+    .main-index-content {
+        @apply sm:px-8 md:px-20;
+    }
+
     .main-promo-content,
     .main-profile-content {
-        @apply mt-16 mb-20;
+        @apply mt-16 mb-20 sm:px-8 md:px-20;
     }
 
     .main-index-content section,
@@ -168,7 +180,7 @@
     }
 
     .main-menu-content {
-        @apply mb-20;
+        @apply mb-20 sm:px-8 md:px-20;
     }
 
     .menu-content {
@@ -176,15 +188,15 @@
     }
 
     .heading-text {
-        @apply w-max mb-4 text-xl capitalize font-semibold border-b-2 border-neutral-400;
+        @apply w-max mb-4 text-xl capitalize font-semibold border-b-2 border-neutral-400 md:text-2xl;
     }
 
     .card-wrapper {
-        @apply flex flex-col gap-4;
+        @apply flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-8;
     }
 
     .card {
-        @apply p-4 flex items-center gap-4 shadow-sm shadow-neutral-400 rounded-xl;
+        @apply p-4 flex items-center gap-4 shadow-sm shadow-neutral-400 rounded-xl lg:items-start;
     }
 
     .card span {
@@ -192,19 +204,19 @@
     }
 
     .menu-image {
-        @apply w-20 aspect-square object-cover object-center rounded-full;
+        @apply w-20 aspect-square object-cover object-center rounded-full md:w-28 lg:w-36;
     }
 
     .menu-description {
-        @apply mt-4;
+        @apply mt-4 md:text-lg;
     }
 
     .menu-description h1 {
-        @apply capitalize font-semibold;
+        @apply capitalize font-semibold md:text-xl;
     }
 
     .card h4 {
-        @apply text-xl uppercase font-semibold text-secondary;
+        @apply h-full text-xl uppercase font-semibold flex items-center text-secondary md:text-2xl;
     }
 
     .cta-button-menu,
@@ -217,6 +229,14 @@
         @apply w-max py-2 px-4 rounded-xl text-white bg-default;
     }
 
+    .main-promo-content section .card-wrapper {
+        @apply sm:grid sm:grid-cols-2 sm:gap-4;
+    }
+
+    .promo-card-wrapper {
+        @apply flex flex-col gap-4 sm:grid sm:grid-cols-2 sm:gap-4 lg:gap-8;
+    }
+
     .promo-card {
         @apply p-4 shadow-sm shadow-neutral-400 rounded-xl;
     }
@@ -226,15 +246,15 @@
     }
 
     .promo-description {
-        @apply mt-4;
+        @apply mt-4 md:text-lg;
     }
 
     .promo-description h1 { 
-        @apply capitalize font-semibold;
+        @apply capitalize font-semibold md:text-xl;
     }
 
     .promo-description p {
-        @apply my-4;
+        @apply my-4 md:text-base;
     }
 
     .promo-description small  i {
@@ -253,20 +273,20 @@
         @apply w-full capitalize flex items-center gap-4;
     }
 
-    .testimoni-name-wrapper img {
-        @apply w-10;
+    .testimoni-card div img {
+        @apply w-16 md:w-20;
     }
 
     .testimoni-card div h1 {
-        @apply font-semibold;
+        @apply font-semibold md:text-xl;
     }
 
     .testimoni-card figcaption {
-        @apply mt-4 flex flex-col gap-2;
+        @apply mt-4 flex flex-col gap-2 md:text-lg;
     }
 
     .testimoni-card figcaption small i {
-        @apply text-xs text-secondary;
+        @apply text-xs text-secondary md:text-lg;
     }
 
     .filter-button-wrapper {
@@ -274,7 +294,7 @@
     }
 
     .filter-button-group {
-        @apply -mt-4 py-4 flex gap-2 snap-x snap-mandatory overflow-auto;
+        @apply -mt-4 py-4 flex gap-2 snap-x snap-mandatory overflow-auto lg:justify-center;
     }
 
     .filter-button-group li {
@@ -282,7 +302,7 @@
     }
 
     .filter-button-group li button {
-        @apply p-2 text-xs capitalize border border-neutral-400 rounded-full;
+        @apply p-2 text-xs capitalize border border-neutral-400 rounded-full md:text-base;
     }
 
     .main-profile-content article figure img {
@@ -295,23 +315,23 @@
 
     /* footer area */
     .footer {
-        @apply mt-8 pb-28 text-white bg-default;
+        @apply mt-8 pb-28 text-white bg-default sm:px-8 md:px-20 md:pb-32 lg:px-20;
     }
 
     .footer-content-wrapper {
-        @apply flex flex-col gap-8;
+        @apply flex flex-col gap-8 sm:flex-row sm:justify-between;
     }
 
     .credits {
-        @apply w-full mt-8 px-4 text-center;
+        @apply w-full mt-8 px-4 text-center sm:text-start sm:w-1/2 lg:text-start;
     }
 
     .credits-image {
-        @apply w-16 m-auto;
+        @apply w-16 m-auto sm:m-0 md:w-20 lg:m-0;
     }
 
     .text-image {
-        @apply w-[60%] mt-2 mb-1 mx-auto;
+        @apply max-w-64 mt-2 mb-1 mx-auto sm:max-w-48 sm:mx-0 lg:mx-0;
     }
 
     .credits-description {
@@ -319,7 +339,7 @@
     }
 
     .credits-description p {
-        @apply my-2 text-xs;
+        @apply my-2 text-xs md:text-base;
     }
 
     .credits-description h4 {
@@ -327,11 +347,11 @@
     }
 
     .credits-description ul {
-        @apply text-xl flex justify-center gap-4;
+        @apply text-xl flex justify-center gap-4 sm:justify-start md:text-2xl;
     }
 
     .extra-link-wrapper {
-        @apply text-center flex flex-col gap-8;
+        @apply text-center flex flex-col gap-8 sm:mt-8 sm:text-start lg:w-full lg:mt-8 lg:flex-row;
     }
 
     .extra-link-wrapper section {
@@ -339,7 +359,7 @@
     }
 
     .extra-link-wrapper section h1 {
-        @apply mb-4 font-semibold underline;
+        @apply mb-4 font-semibold underline md:text-lg;
     }
 
     .extra-link-wrapper section ul {
@@ -347,15 +367,15 @@
     }
 
     .extra-link-wrapper section small {
-        @apply text-xs;
+        @apply text-xs md:text-base;
     }
 
     .extra-link-wrapper section img {
-        @apply w-16 mx-auto aspect-video rounded-md;
+        @apply w-16 mx-auto aspect-video rounded-md sm:mx-0 md:w-20;
     }
 
     .copyright {
-        @apply mt-16 text-xs text-center capitalize text-primary;
+        @apply mt-16 text-xs text-center capitalize text-primary md:text-base;
     }
 }
 
