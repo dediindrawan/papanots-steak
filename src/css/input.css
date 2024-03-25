@@ -246,7 +246,7 @@
     }
 
     .promo-description {
-        @apply mt-4 md:text-lg;
+        @apply text-xs mt-4 md:text-lg;
     }
 
     .promo-description h1 { 
