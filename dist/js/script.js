@@ -1,5 +1,14 @@
 const data = '/src/data/data.json';
 
+const loadingContents = document.querySelectorAll('.loading-content');
+const containers = document.querySelectorAll('.container');
+
+// show and hide loading content on process downloading data
+function showHideLoadingContent() {
+    loadingContents.forEach(loadingContent => loadingContent.style.display = 'none');
+    containers.forEach(container => container.style.display = 'block');
+};
+
 async function getSourceData() {
     try {
         const response = await fetch(data);
@@ -7,6 +16,8 @@ async function getSourceData() {
         if (!response.ok) {
             throw new Error(response.statusText);
         };
+
+        showHideLoadingContent();
 
         const results = await response.json();
 
@@ -40,8 +51,10 @@ function searchMenu(menus) {
             const cardWrapper = document.querySelector('.card-wrapper');
             cardWrapper.innerHTML = '';
 
+            let result = false;
+
             menus.forEach(menu => {
-                if (menu.name.includes(inputValue)) {
+                if (isSearchMatch(menu, inputValue)) {
                     let menuList =
                         `
                         <figure id="${menu.id}" class="card">
@@ -56,14 +69,33 @@ function searchMenu(menus) {
                         </figure>
                         `;
                     cardWrapper.innerHTML += menuList;
+
+                    result = true;
                 };
             });
+
+            // show notification if menu is not found
+            if (!result) {
+                const cardWrapper = document.querySelector('.card-wrapper');
+                cardWrapper.innerHTML = '';
+
+                const responseError = document.createElement('h1');
+
+                responseError.innerText = 'Menu yang kamu cari tidak tersedia';
+
+                cardWrapper.appendChild(responseError);
+            };
         });
 
         searchInput.addEventListener('blur', () => {
             searchInput.value = '';
         });
     };
+};
+
+// show menu if match with keyword typing
+function isSearchMatch(menu, inputValue) {
+    return menu.name.includes(inputValue);
 };
 
 function filterMenu(menus) {
