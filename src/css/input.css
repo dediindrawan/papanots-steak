@@ -377,7 +377,7 @@
     }
 
     .extra-link-wrapper section ul {
-        @apply text-xs flex flex-col gap-2;
+        @apply text-xs flex justify-center gap-2 sm:justify-start;
     }
 
     .extra-link-wrapper section small {

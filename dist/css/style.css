@@ -1734,10 +1734,16 @@ html, body{
 
 .extra-link-wrapper section ul{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+@media (min-width: 640px){
+  .extra-link-wrapper section ul{
+    justify-content: flex-start;
+  }
 }
 
 .extra-link-wrapper section small{
