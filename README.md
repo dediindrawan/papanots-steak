@@ -6,14 +6,18 @@ Konsep dasar yang melatarbelakangi tujuan dibangunnya website ini adalah sebagai
 
 Berikut ini adalah mockup dari potongan tampilan halaman web di berbagai ukuran layar perangkat:
 
+# Smartphone (portrait mode)
 ![Google-Pixel5-127 0 0 1 (1)](https://github.com/dediindrawan/papanots-steak/assets/107289320/36fae664-54db-42a6-9f4b-8743c2075ef4)
 
+# Smartphone (landscape mode)
 ![Google-Pixel5-127 0 0 1](https://github.com/dediindrawan/papanots-steak/assets/107289320/d0c01518-acf9-4110-9f8d-7826ed6de01e)
 
+# Tablet
 ![iPad-Mini-127 0 0 1](https://github.com/dediindrawan/papanots-steak/assets/107289320/4f733346-4acf-4d16-8da6-273206e2fb0e)
 
+# Laptop atau Desktop
 ![Macbook-Air-127 0 0 1](https://github.com/dediindrawan/papanots-steak/assets/107289320/1e96821c-7dde-4a22-b2f5-e192b69c42ec)
 
-Untuk dapat berinteraksi langsung silakan menuju halaman web Papanots Steak di alamat url: https://papanots-steak.vercel.app/
+Untuk dapat berinteraksi secara langsung silakan menuju halaman web Papanots Steak di alamat url: https://papanots-steak.vercel.app/
 
 Papanots Steak #steakistimewauntuksemua
