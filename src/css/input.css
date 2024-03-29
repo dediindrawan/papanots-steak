@@ -376,15 +376,15 @@
         @apply mb-4 font-semibold underline md:text-lg;
     }
 
-    .extra-link-wrapper section ul {
-        @apply text-xs flex justify-center gap-2 sm:justify-start;
-    }
-
     .extra-link-wrapper section small {
         @apply text-xs md:text-base;
     }
 
-    .extra-link-wrapper section img {
+    .extra-link-wrapper section ul {
+        @apply text-xs flex justify-center gap-2 sm:justify-start;
+    }
+
+    .extra-link-wrapper section ul li img {
         @apply w-16 mx-auto aspect-video rounded-md sm:mx-0 md:w-20;
     }
 
