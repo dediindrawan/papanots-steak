@@ -1746,6 +1746,7 @@ html, body{
 
 .extra-link-wrapper section ul{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
   font-size: 0.75rem;
@@ -1754,6 +1755,7 @@ html, body{
 
 @media (min-width: 640px){
   .extra-link-wrapper section ul{
+    flex-direction: row;
     justify-content: flex-start;
   }
 }

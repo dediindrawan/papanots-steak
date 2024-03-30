@@ -381,7 +381,7 @@
     }
 
     .extra-link-wrapper section ul {
-        @apply text-xs flex justify-center gap-2 sm:justify-start;
+        @apply text-xs flex flex-col justify-center gap-2 sm:flex-row sm:justify-start;
     }
 
     .extra-link-wrapper section ul li img {
