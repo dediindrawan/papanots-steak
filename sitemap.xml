@@ -4,25 +4,25 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>https://papanots-steak.vercel.app/</loc>
+        <lastmod>2024-05-02T20:04:17+00:00</lastmod>
         <changefreq>daily</changefreq>
-        <lastmod>2024-03-30T21:21:33+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>https://papanots-steak.vercel.app/index.html</loc>
-        <lastmod>2024-03-30T21:21:33+00:00</lastmod>
+        <lastmod>2024-05-02T20:04:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://papanots-steak.vercel.app/pages/menu.html</loc>
-        <lastmod>2024-03-30T21:21:33+00:00</lastmod>
+        <lastmod>2024-05-02T20:04:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://papanots-steak.vercel.app/pages/promo.html</loc>
-        <lastmod>2024-03-30T21:21:33+00:00</lastmod>
+        <lastmod>2024-05-02T20:04:17+00:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.80</priority>
     </url>
