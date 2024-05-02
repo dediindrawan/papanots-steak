@@ -1732,15 +1732,33 @@ html, body{
   }
 }
 
-.extra-link-wrapper section small{
+.extra-link-wrapper section:first-child ul{
+  display: flex;
+  flex-direction: column;
   font-size: 0.75rem;
   line-height: 1rem;
 }
 
 @media (min-width: 768px){
-  .extra-link-wrapper section small{
+  .extra-link-wrapper section:first-child ul{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+
+.extra-link-wrapper section:first-child ul li span{
+  display: inline-block;
+}
+
+@media (min-width: 640px){
+  .extra-link-wrapper section:first-child ul li span{
+    min-width: 6rem;
+  }
+}
+
+@media (min-width: 768px){
+  .extra-link-wrapper section:first-child ul li span{
+    min-width: 8rem;
   }
 }
 

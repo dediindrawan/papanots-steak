@@ -376,8 +376,12 @@
         @apply mb-4 font-semibold underline md:text-lg;
     }
 
-    .extra-link-wrapper section small {
-        @apply text-xs md:text-base;
+    .extra-link-wrapper section:first-child ul {
+        @apply text-xs flex flex-col md:text-base;
+    }
+
+    .extra-link-wrapper section:first-child ul li span {
+        @apply inline-block sm:min-w-24 md:min-w-32;
     }
 
     .extra-link-wrapper section ul {
