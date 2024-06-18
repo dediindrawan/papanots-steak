@@ -1,11 +1,22 @@
-# Papanots Steak Website
+* Papanots Steak Website *
 
-Papanots Steak adalah sebuah bidang usaha kuliner dengan sajian utama berbagai olahan Steak dan juga berbagai menu lainnya seperti Pasta, Burger, French Fries, dan juga aneka olahan minuman. Melalui website yang dibuat ini, diharapkan dapat mempermudah penyampaian informasi dan edukasi melalui jaringan internet kepada semua pengunjung website. Pada proses pembuatannya, website ini dibangun menggunakan teknologi standard yang umum digunakan untuk pembuatan website, yaitu Html, Css (Tailwindcss), dan JavaScript.
+Website yang menampilkan berbagai informasi menu dari sebuah resto yang menyajikan hidangan makanan utama berupa olahan steak dan juga menu-menu lainnya.
 
-Konsep dasar yang melatarbelakangi tujuan dibangunnya website ini adalah sebagai media yang mampu menyajikan informasi terkait daftar menu, promo, dan informasi-informasi tambahan lainnya. Meskipun belum menerapkan sistem pemesanan online, pada halaman web sudah disediakan kontak WhatsApp sebagai media alternatif bagi pengunjung untuk dapat berkomunikasi secara langsung dengan admin resto.
+# Terdiri dari 3 halaman:
+- Beranda
+- Menu
+- Promo
 
-Berikut ini adalah mockup dari potongan tampilan halaman web di berbagai ukuran layar perangkat:
+# Halaman beranda:
+Menampilkan ringkasan menu favorit dan ringkasan promo 
 
+# Halaman Menu:
+Menampilkan keseluruhan daftar menu
+
+# Halaman Promo:
+Menampilkan keseluruhan daftar promo
+
+Mockup tampilan di berbagai ukuran layar:
 ![Google-Pixel5-127 0 0 1 (1)](https://github.com/dediindrawan/papanots-steak/assets/107289320/36fae664-54db-42a6-9f4b-8743c2075ef4)
 
 ![Google-Pixel5-127 0 0 1](https://github.com/dediindrawan/papanots-steak/assets/107289320/d0c01518-acf9-4110-9f8d-7826ed6de01e)
@@ -14,6 +25,47 @@ Berikut ini adalah mockup dari potongan tampilan halaman web di berbagai ukuran 
 
 ![Macbook-Air-127 0 0 1](https://github.com/dediindrawan/papanots-steak/assets/107289320/1e96821c-7dde-4a22-b2f5-e192b69c42ec)
 
-Untuk dapat berinteraksi secara langsung silakan menuju halaman web Papanots Steak di alamat url: https://papanots-steak.vercel.app/
+# Live preview: https://papanots-steak.vercel.app/
 
-Papanots Steak #steakistimewauntuksemua
+# Tech stack yang digunakan:
+- HTML
+- Tailwindcss (cli)
+- JavaScript
+
+* Proses instalasi tailwindcss *
+
+# Instalasi node modules. Jalankan perintah pada terminal:
+  npm install -y
+
+# Instalasi dependencies tailwindcss, postcss, autoprefixer. Jalankan perintah pada terminal:
+  npm install -D tailwindcss postcss autoprefixer
+  npx tailwindcss init
+
+# Configurasi tailwindcss didalam file tailwind.config.js:
+  /** @type {import('tailwindcss').Config} */
+  module.exports = {
+    content: ["./src/**/*.{html,js}"],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  }
+
+# Menambahkkan tailwindcss directives kedalam file css didalam file src/css/input.css:
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+# Mulai proses pengembangan, jalankan cli untuk memindai file css. Jalankan perintah pada terminal:
+  npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css --watch
+
+# Tambahkan file css yang sudah di compile kedalam tag <head> didalam file html:
+  <link href="/dist/css/style.css">
+
+# Agar proses development lebih mudah, masuk kedalam file package.json kemudian tulis seperti ini didalam object scripts:
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css --watch"
+  }
+
+# Jalankan tailwind untuk proses development interface menggunakan perintah pada terminal:
+  npm run dev
