@@ -17,7 +17,16 @@ module.exports = {
         'primary': '#ffde17',
         'secondary': '#ec9228',
         'default': '#1b1c1e'
-      }
+      },
+      keyframes: {
+        'run-text': {
+          '0%': {transform: 'translateX(100vw)'},
+          '100%': {transform: 'translateX(-100%)'}
+        }
+      },
+      animation: {
+        'running-text': 'run-text 65s linear infinite'
+      },
     },
   },
   plugins: [],
