@@ -5,7 +5,7 @@
             "image": "/src/asset/special-beef-steak-meltique.jpg",
             "cattegory": "steak",
             "name": "special beef steak meltique",
-            "description": "Potongan daging sapi pilihan dengan porsi yang lebih besar yang diracik dengan bumbu khas yang otentik. Dipanggang hingga mencapai tingkat kematangan ideal, dan disajikan dengan paduan saus spesial yang nikmat dan lezat.",
+            "description": "Potongan daging sapi sirloin pilihan dengan porsi yang lebih besar yang diracik dengan bumbu khas yang otentik. Dipanggang hingga mencapai tingkat kematangan ideal, dan disajikan dengan paduan saus spesial yang nikmat dan lezat.",
             "price": 70
         },
         {
@@ -13,7 +13,7 @@
             "image": "/src/asset/beef-steak-meltique.jpg",
             "cattegory": "steak",
             "name": "beef steak meltique",
-            "description": "Potongan daging sapi pilihan yang diracik dengan bumbu khas yang otentik. Dipanggang hingga mencapai tingkat kematangan ideal, dan disajikan dengan paduan saus spesial yang nikmat dan lezat.",
+            "description": "Potongan daging sapi rib eye pilihan yang diracik dengan bumbu khas yang otentik. Dipanggang hingga mencapai tingkat kematangan ideal, dan disajikan dengan paduan saus spesial yang nikmat dan lezat.",
             "price": 45
         },
         {
@@ -310,7 +310,7 @@
             "image": "/src/asset/beef-steak-meltique.jpg",
             "cattegory": "steak",
             "name": "beef steak meltique",
-            "description": "Potongan daging sapi pilihan yang diracik dengan bumbu khas yang otentik. Dipanggang hingga mencapai tingkat kematangan ideal, dan disajikan dengan paduan saus spesial yang nikmat dan lezat.",
+            "description": "Potongan daging sapi rib eye pilihan yang diracik dengan bumbu khas yang otentik. Dipanggang hingga mencapai tingkat kematangan ideal, dan disajikan dengan paduan saus spesial yang nikmat dan lezat.",
             "price": 45
         },
         {
