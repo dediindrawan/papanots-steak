@@ -1,19 +1,19 @@
-* Papanots Steak Website *
+# Papanots Steak Website
 
 Website yang menampilkan berbagai informasi menu dari sebuah resto yang menyajikan hidangan makanan utama berupa olahan steak dan juga menu-menu lainnya.
 
-# Terdiri dari 3 halaman:
+* Terdiri dari 3 halaman:
 - Beranda
 - Menu
 - Promo
 
-# Halaman beranda:
+* Halaman beranda:
 Menampilkan ringkasan menu favorit dan ringkasan promo 
 
-# Halaman Menu:
+* Halaman Menu:
 Menampilkan keseluruhan daftar menu
 
-# Halaman Promo:
+* Halaman Promo:
 Menampilkan keseluruhan daftar promo
 
 Mockup tampilan di berbagai ukuran layar:
@@ -32,16 +32,16 @@ Mockup tampilan di berbagai ukuran layar:
 - Tailwindcss (cli)
 - JavaScript
 
-* Proses instalasi tailwindcss *
+# Proses instalasi tailwindcss
 
-# Instalasi node modules. Jalankan perintah pada terminal:
+* Instalasi node modules. Jalankan perintah pada terminal:
   npm install -y
 
-# Instalasi dependencies tailwindcss, postcss, autoprefixer. Jalankan perintah pada terminal:
+* Instalasi dependencies tailwindcss, postcss, autoprefixer. Jalankan perintah pada terminal:
   npm install -D tailwindcss postcss autoprefixer
   npx tailwindcss init
 
-# Configurasi tailwindcss didalam file tailwind.config.js:
+* Configurasi tailwindcss didalam file tailwind.config.js:
   /** @type {import('tailwindcss').Config} */
   module.exports = {
     content: ["./src/**/*.{html,js}"],
@@ -51,21 +51,21 @@ Mockup tampilan di berbagai ukuran layar:
     plugins: [],
   }
 
-# Menambahkkan tailwindcss directives kedalam file css didalam file src/css/input.css:
+* Menambahkkan tailwindcss directives kedalam file css didalam file src/css/input.css:
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
 
-# Mulai proses pengembangan, jalankan cli untuk memindai file css. Jalankan perintah pada terminal:
+* Mulai proses pengembangan, jalankan cli untuk memindai file css. Jalankan perintah pada terminal:
   npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css --watch
 
-# Tambahkan file css yang sudah di compile kedalam tag <head> didalam file html:
+* Tambahkan file css yang sudah di compile kedalam tag <head> didalam file html:
   <link href="/dist/css/style.css">
 
-# Agar proses development lebih mudah, masuk kedalam file package.json kemudian tulis seperti ini didalam object scripts:
+* Agar proses development lebih mudah, masuk kedalam file package.json kemudian tulis seperti ini didalam object scripts:
   "scripts": {
     "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/style.css --watch"
   }
 
-# Jalankan tailwind untuk proses development interface menggunakan perintah pada terminal:
+* Jalankan tailwind untuk proses development interface menggunakan perintah pada terminal:
   npm run dev
